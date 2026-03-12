@@ -2,7 +2,7 @@ import Image from 'next/image';
 import ViewComponentDetails from '../components/actions/ViewComponentDetails';
 import BookmarkMarkCompoent from '../components/actions/BookmarkMarkCompoent';
 
-const CardComponent = ({ item, onToggle }) => {
+export default function CardComponent  ({ item, onToggle }) {
   return (
     <div className='w-[99%] bg-[#0d1117] ml-3 mr-5 rounded-lg border border-[#1c1f23] text-white p-4 flex items-center justify-between'>
       <div className='flex items-center gap-4'>
@@ -26,5 +26,3 @@ const CardComponent = ({ item, onToggle }) => {
     </div>
   )
 }
-
-export default CardComponent;
